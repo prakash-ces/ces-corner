@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule }    from '@angular/forms'
-import { HttpModule } from '@angular/http';
+import { HttpModule } from '@angular/http'
 
 import { AppComponent } from './app.component'
 import { HeaderComponent } from './header/header.component'
@@ -10,15 +10,18 @@ import { NoticeComponent } from './content/notice/notice.component'
 
 import { AppRoutingModule } from './app-routing.module'
 
-import { NoticeService } from './common/notice.service'
-import { TimelineService } from './common/timeline.service'
+import { NoticeService } from './common/services/notice.service'
+import { TimelineService } from './common/services/timeline.service'
+
+import { FilterResults } from './common/components/filterResults.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     NoticeComponent,
     TimelineComponent,
-    HeaderComponent
+    HeaderComponent,
+    FilterResults
   ],
   imports: [
     BrowserModule,

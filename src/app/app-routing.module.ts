@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { TimelineComponent } from './content/timeline/timeline.component';
 import { NoticeComponent } from './content/notice/notice.component';
+import { FilterResults } from 'app/common/components/filterResults.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'timeline', pathMatch: 'full' },
   { path: 'timeline',  component: TimelineComponent },
   // { path: 'notice/:id', component: NoticeComponent }
+  { path: 'filter',  component: FilterResults },
   { path: 'notice', component: NoticeComponent },
   { path: '**', redirectTo: 'timeline' },
 ];
