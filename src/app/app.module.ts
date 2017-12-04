@@ -13,7 +13,7 @@ import { AppRoutingModule } from './app-routing.module'
 import { NoticeService } from './common/services/notice.service'
 import { TimelineService } from './common/services/timeline.service'
 
-import { FilterResults } from './common/components/filterResults.component'
+import { FilterContainer } from './common/components/filterContainer/filterContainer.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { FilterResults } from './common/components/filterResults.component'
     NoticeComponent,
     TimelineComponent,
     HeaderComponent,
-    FilterResults
+    FilterContainer
   ],
   imports: [
     BrowserModule,
