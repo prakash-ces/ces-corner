@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { TimelineService } from './../../common/timeline.service'
+import { TimelineService } from './../../common/services/timeline.service'
 import { NgFor } from '@angular/common'
 
 @Component({

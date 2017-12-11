@@ -13,3 +13,17 @@
 a {
    outline: 0;
 }
+
+
+.dashed-border-gray {
+  border: 2px dashed #CDC;
+}
+
+.filter-link-button {
+  padding: 5px;
+  background-color: #3AABBB;
+}
+
+.margin-10 {
+  margin: 10px;
+}
