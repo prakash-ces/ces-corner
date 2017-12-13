@@ -1,8 +1,9 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { FormsModule }    from '@angular/forms'
-import { HttpModule } from '@angular/http'
-
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule }    from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import {trigger} from '@angular/animations';
 import { AppComponent } from './app.component'
 import { HeaderComponent } from './header/header.component'
 import { TimelineComponent } from './content/timeline/timeline.component'
@@ -25,6 +26,7 @@ import { FilterContainer } from './common/components/filterContainer/filterConta
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,
     HttpModule
