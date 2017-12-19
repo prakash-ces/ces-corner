@@ -1,8 +1,10 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { FormsModule }    from '@angular/forms'
-import { HttpModule } from '@angular/http'
-
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {AnimationBuilder} from '@angular/animations';
+import { FormsModule }    from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import {trigger} from '@angular/animations';
 import { AppComponent } from './app.component'
 import { HeaderComponent } from './header/header.component'
 import { TimelineComponent } from './content/timeline/timeline.component'
@@ -25,6 +27,7 @@ import { FilterContainer } from './common/components/filterContainer/filterConta
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,
     HttpModule
@@ -35,23 +38,3 @@ import { FilterContainer } from './common/components/filterContainer/filterConta
 export class AppModule { }
 
 
-// import { DashboardComponent }   from './dashboard.component';
-// import { HeroDetailComponent }  from './hero-detail.component';
-// import { HeroesComponent }      from './heroes.component';
-// import { HeroService }          from './hero.service';
-
-// @NgModule({
-//   imports: [
-//     BrowserModule,
-//     FormsModule,
-//     AppRoutingModule
-//   ],
-//   declarations: [
-//     AppComponent,
-//     DashboardComponent,
-//     HeroDetailComponent,
-//     HeroesComponent
-//   ],
-//   providers: [ HeroService ],
-//   bootstrap: [ AppComponent ]
-// })

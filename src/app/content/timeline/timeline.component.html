@@ -1,4 +1,4 @@
-<h2>TIMELINE</h2>
+<h2 >TIMELINE</h2>
 
 <a href routerLink="/notice">View Notice</a>
 <br>
@@ -6,10 +6,12 @@
 
 <section id="cd-timeline" class="cd-container">
     <div *ngFor="let post of posts | async" class="cd-timeline-block" >
+       <div  [ngClass]="'animated infinite pulse'">
         <div class="cd-timeline-img cd-picture">
-             <img src="{{post.imgurl}}" alt="P">
+             <img  @fade src="{{post.imgurl}}" alt="P">
         </div>
-
+    </div>
+    <div [ngClass]="'animated fadeIn'">
         <div class="cd-timeline-content">
             <h2>{{post.title}}</h2>
             <p>{{post.content}}</p>
@@ -17,4 +19,8 @@
             <span class="cd-date">{{post.crdate}}</span>
         </div>
     </div>
+    </div>
 </section>
+
+
+
