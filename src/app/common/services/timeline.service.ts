@@ -58,15 +58,20 @@ export class TimelineService {
     return this.http.get("./assets/posts.json")
       .map((res:Response) => {
         console.log("SERVICE BETWEEN", res.json())
-        //this.tmpData = res.json();
+        
         return res.json();
       })
-      // .do(data => {
-      //   console.log("HERE ->", data)
-      //   return data;
-      // }
-    // );
+      
 
-    // return this.tmpData;
+  }
+}
+function getWindow (): any {
+  return window;
+}
+
+@Injectable()
+export class WindowRefService {
+  get nativeWindow (): any {
+      return getWindow();
   }
 }

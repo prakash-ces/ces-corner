@@ -1,8 +1,10 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { FormsModule }    from '@angular/forms'
-import { HttpModule } from '@angular/http'
-
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {AnimationBuilder} from '@angular/animations';
+import { FormsModule }    from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import {trigger} from '@angular/animations';
 import { AppComponent } from './app.component'
 import { HeaderComponent } from './header/header.component'
 import { TimelineComponent } from './content/timeline/timeline.component'
@@ -14,7 +16,7 @@ import { NoticeService } from './common/services/notice.service'
 import { TimelineService } from './common/services/timeline.service'
 
 import { FilterContainer } from './common/components/filterContainer/filterContainer.component'
-
+import { WindowRefService } from '../app/common/services/timeline.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,33 +27,15 @@ import { FilterContainer } from './common/components/filterContainer/filterConta
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,
-    HttpModule
+    HttpModule,
+   
   ],
-  providers: [NoticeService, TimelineService],
+  providers: [NoticeService, TimelineService,WindowRefService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
 
 
-// import { DashboardComponent }   from './dashboard.component';
-// import { HeroDetailComponent }  from './hero-detail.component';
-// import { HeroesComponent }      from './heroes.component';
-// import { HeroService }          from './hero.service';
-
-// @NgModule({
-//   imports: [
-//     BrowserModule,
-//     FormsModule,
-//     AppRoutingModule
-//   ],
-//   declarations: [
-//     AppComponent,
-//     DashboardComponent,
-//     HeroDetailComponent,
-//     HeroesComponent
-//   ],
-//   providers: [ HeroService ],
-//   bootstrap: [ AppComponent ]
-// })
