@@ -16,7 +16,7 @@ import { NoticeService } from './common/services/notice.service'
 import { TimelineService } from './common/services/timeline.service'
 
 import { FilterContainer } from './common/components/filterContainer/filterContainer.component'
-
+import { WindowRefService } from '../app/common/services/timeline.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,9 +30,10 @@ import { FilterContainer } from './common/components/filterContainer/filterConta
     BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,
-    HttpModule
+    HttpModule,
+   
   ],
-  providers: [NoticeService, TimelineService],
+  providers: [NoticeService, TimelineService,WindowRefService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
