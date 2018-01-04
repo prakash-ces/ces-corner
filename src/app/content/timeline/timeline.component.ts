@@ -31,22 +31,19 @@ export class TimelineComponent {
 
   // constructor(private timelinedata: TimelineService, windowRef: WindowRefService, private elRef: ElementRef) {
   constructor(private timelinedata: TimelineService, windowRef: WindowRefService) {
-    // this.posts = timelinedata.getPosts()
-    console.log("component START");
+    //this.posts = timelinedata.getPosts()
     this._window = windowRef.nativeWindow;
-
-    this.posts = timelinedata.getNewPosts()
-    console.log("component DONE", this.posts);
+    this.posts = timelinedata.getNewPosts();
+    this.goUpIcon = 'display-none';
   }
   
-  track($event) {
+  track($event) {  
     if(window.pageYOffset > 100){
-     
       this.goUpIcon = 'display-block';
     } else {
-      
       this.goUpIcon = 'display-none';
     }
+   
   }
 
   doThing() {

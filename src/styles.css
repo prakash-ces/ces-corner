@@ -44,11 +44,13 @@ a {
 }
 
 
-.scroll-icon{
+#btnGoUp{
   position: fixed;
-  display: none;
   bottom: 50px;
   right: 50px;
+  z-index: 100;
+  background-color: black;
+  border: 1px solid gray;
 }
 
 .display-block{
