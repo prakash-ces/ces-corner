@@ -1,10 +1,27 @@
-# NoticeBoard
+# ces-corner
 
-This project contains a plain notice board which can only be used to view the announcements from the CES Admin team.
+> Internal Project for CES
 
-## Project structure
+## Build Setup
 
-1. Admin panel contains a simple text editor.
-2. Timeline view will contain all the posts.
-3. The Details view will load the detailed view of the posts if it exceeds tha particular limit or if it contains any media.
-4. Posts that are less than 12 hrs old will be highlighted with the NEW label.
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run all tests
+npm test
+```
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
