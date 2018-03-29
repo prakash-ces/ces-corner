@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <a href="/ConfBooking" >Go to Conference Booking Page</a>
     <!-- <h2>Essential Links</h2>
     <ul>
       <li>
